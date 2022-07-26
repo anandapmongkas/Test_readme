@@ -3,9 +3,9 @@
 ###### No Absen:13
 # Modul 1
 
-Soal No.1
-Lakukan proses instalasi framework laravel kedalam folder dengan nama masing-masing.
-
+## Soal 
+1. Lakukan proses instalasi framework laravel kedalam folder dengan nama masing-masing.
+2. Buatlah projek pertama laravel dengan nama projek “penjualan” dan tampilkan dalam browser.
 ```
 composer create-project laravel/laravel penjualan
 ```
@@ -15,6 +15,12 @@ composer create-project laravel/laravel penjualan
 Soal No.1
 Buatlah migration tabel kategori dengan menggunakan teknik yang telah di pelajari dalam 
 modul ini.
+
+### Langkah Pertama
+```
+Masukan code seperti dibawah:
+php artisan migration create_kategori_table
+```
 ```
 <?php
 
@@ -48,6 +54,10 @@ return new class extends Migration
         Schema::dropIfExists('kategori');
     }
 };
+```
+### Langkah Kedua
+```
+php artisan migrate
 ```
 
 Soal No.2
@@ -90,3 +100,6 @@ class kategoritableseeder extends Seeder
     }
 }
 ```
+# Contoh saja codingan seperti diatas ^_^
+# NOT TIDAK UNTUK : COPAS
+                                     
